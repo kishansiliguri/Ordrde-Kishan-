@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "465647586140",
+    "project_id": "kishan-order",
+    "storage_bucket": "kishan-order.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:465647586140:android:2000050d1c1d3335da4f99",
+        "android_client_info": {
+          "package_name": "com.kishan.orderpanel"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAUmtDfVIKF-zVW4Sg237JCu8gou76TM2A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
