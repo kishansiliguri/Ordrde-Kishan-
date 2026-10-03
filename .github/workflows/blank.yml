@@ -20,6 +20,10 @@ jobs:
         run: |
           unzip -q source.zip -d proj
           cp google-services.json proj/app/google-services.json
+          PKG=$(jq -r '.client[0].client_info.android_client_info.package_name' google-services.json)
+          echo "Using package name: $PKG"
+          sed -i "s/applicationId = \"com.shop.orders\"/applicationId = \"$PKG\"/" proj/app/build.gradle.kts
+          grep applicationId proj/app/build.gradle.kts
       - name: Build APK
         run: cd proj && gradle assembleDebug --no-daemon
       - name: Publish APK
